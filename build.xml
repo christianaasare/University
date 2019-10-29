@@ -1,7 +1,7 @@
 <project>
 
   <property name="output.dir" value="${basedir}/build"/>
-  <property name="src.test.dir" value="${basedir}/src/test"/>
+  <property name="src.Test.dir" value="${basedir}/src/Test"/>
   <property name="build.classes.dir" value="${output.dir}/classes"/>
 
   <target name="init">
@@ -18,7 +18,7 @@
 
   <target name="compile-test" depends="init">
     <mkdir dir="${build.classes.dir}"/>
-    <javac srcdir="${src.test.dir}"
+    <javac srcdir="${src.Test.dir}"
            destdir="${build.classes.dir}">
       <!-- our tests only need JUnit Jupiter engine
       libraries in our compile classpath for the tests -->
@@ -26,7 +26,7 @@
     </javac>
   </target>
 
-  <target name="test" depends="compile-test">
+  <target name="Test" depends="compile-test">
     <junitlauncher>
       <!-- include the JUnit platform related libraries
       required to run the tests -->
