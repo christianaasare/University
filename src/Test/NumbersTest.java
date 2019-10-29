@@ -9,7 +9,7 @@ class NumbersTest {
     @org.junit.jupiter.api.Test
     void getSum() {
         int sum = Numbers.getSum(2,6);
-        assertEquals(8, 8);
+        assertEquals(8, sum);
     }
 
     @org.junit.jupiter.api.Test
