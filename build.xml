@@ -1,4 +1,4 @@
-<project name="MyProject" default="compile-test" basedir=".">
+<project name="MyProject" default="test" basedir=".">
 
 
     <property name="output.dir" value="${basedir}/build"/>
