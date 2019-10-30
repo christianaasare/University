@@ -1,6 +1,6 @@
 <project>
 
-  <property name="output.dir" value="${basedir}/build"/>
+  <property name="output.dir" value="build"/>
   <property name="src.Test.dir" value="${basedir}/src/Test"/>
   <property name="build.classes.dir" value="${output.dir}/classes"/>
 
@@ -9,11 +9,11 @@
   </target>
 
   <path id="junit.platform.libs.classpath">
-    <fileset dir="${basedir}/src/lib/junit-platform/"/>
+    <fileset dir="${basedir}/lib"/>
   </path>
 
   <path id="junit.engine.jupiter.classpath">
-    <fileset dir="${basedir}/src/lib/jupiter/"/>
+    <fileset dir="${basedir}/lib" />
   </path>
 
   <target name="compile-test" depends="init">
