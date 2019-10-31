@@ -7,8 +7,7 @@ public class Lecture {
 
     private List<Student> students= new ArrayList<>();
 
-    public void Enter(Student student){
-                  this.students.add(student);
+    public void Enter(Student student){ this.students.add(student);
     }
 
     public double highestAverageGrade(){

@@ -3,8 +3,8 @@ package Program;
 import java.util.List;
 
 public class NaughtyStudent extends Student {
-    public NaughtyStudent(List<Double> grades) {
-        super(grades);
+    public NaughtyStudent(List<Double> grades, Level level, String name) {
+        super(name,level, grades);
     }
 
     @Override
