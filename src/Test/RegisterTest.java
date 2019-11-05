@@ -1,9 +1,6 @@
 package Test;
 
-import Program.Level;
-import Program.Nameable;
-import Program.Register;
-import Program.Student;
+import Program.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -32,12 +29,17 @@ class RegisterTest {
     void getRegisterByLevel() {
         List<Nameable> students = Arrays.asList(
                 new Student("Nuy", Level.Third, Arrays.asList(67.0,87.0,8.0)),
-                new Student("treh", Level.First, Arrays.asList(45.4,55.5,78.8))
-//                new NaughtyStudent("Akos",Level.SECOND,Arrays.asList(7.2,1.8))
+                new Student("Treh", Level.First, Arrays.asList(45.4,55.5,78.8)),
+                new NaughtyStudent(Arrays.asList(7.2,1.8),Level.Second,"Pho")
                 );
 
-        Register register = new Register(students);
+        Register reg = new Register(students);
         List<String> expected = Arrays.asList("Nuy");
-        assertEquals(expected,register.getRegisterByLevel(Level.Third));
+        assertEquals(expected,reg.getRegisterByLevel(Level.Third));
+    }
+
+    @Test
+    void printReport() {
+
     }
 }
